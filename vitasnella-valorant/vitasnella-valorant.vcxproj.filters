@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="header files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="source files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="source files\sdk">
+      <UniqueIdentifier>{de14d8f9-45e7-4446-822a-907a6fbea475}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header files\sdk">
+      <UniqueIdentifier>{d0619539-6a1b-49ac-812e-c21d097f7082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header files\sdk\classes">
+      <UniqueIdentifier>{2071c3c5-bd46-447b-af37-45f6a77da81c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source files\sdk\classes">
+      <UniqueIdentifier>{45ec91bf-8448-472b-be9a-8e226f5f93e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source files\hooks">
+      <UniqueIdentifier>{cbe9f438-8267-4535-8f2d-ed293dd79b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header files\hooks">
+      <UniqueIdentifier>{ac507d82-fd80-4875-b729-bdad792c0f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header files\sdk\imgui">
+      <UniqueIdentifier>{c783431e-8a9a-408d-bd2e-af501f458c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source files\sdk\imgui">
+      <UniqueIdentifier>{677aa92d-5f36-4478-a3fb-f2477a77b5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source files\sdk\utilities">
+      <UniqueIdentifier>{0d9a4304-1b73-43bb-a709-4b292df0cd69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source files\features">
+      <UniqueIdentifier>{fbcb5989-2dd1-47bc-b7dd-ff9fc7aabc4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header files\features">
+      <UniqueIdentifier>{42006dfc-dd27-4d20-81be-a7159b228eb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="header files\sdk\utilities">
+      <UniqueIdentifier>{7b9c6083-70a2-4e29-8378-f7ef43b3424d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="entrypoint.cpp">
+      <Filter>source files</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\vector3d.cpp">
+      <Filter>source files\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\classes\entity.cpp">
+      <Filter>source files\sdk\classes</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\hooks.cpp">
+      <Filter>source files\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\utilities\utilities.cpp">
+      <Filter>source files\sdk\utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="features\aimbot.cpp">
+      <Filter>source files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\imgui\imgui.cpp">
+      <Filter>source files\sdk\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\imgui\imgui_demo.cpp">
+      <Filter>source files\sdk\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\imgui\imgui_draw.cpp">
+      <Filter>source files\sdk\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\imgui\imgui_impl_dx11.cpp">
+      <Filter>source files\sdk\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\imgui\imgui_widgets.cpp">
+      <Filter>source files\sdk\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="features\esp.cpp">
+      <Filter>source files\features</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\particles.cpp">
+      <Filter>source files\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\config.cpp">
+      <Filter>source files\sdk</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdk\classes\entity.hh">
+      <Filter>header files\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\classes\vector3d.hh">
+      <Filter>header files\sdk\classes</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\hooks.hh">
+      <Filter>header files\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\utilities\utilities.hh">
+      <Filter>header files\sdk\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="features\aimbot.hh">
+      <Filter>header files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\imgui\imconfig.h">
+      <Filter>header files\sdk\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\imgui\imgui.h">
+      <Filter>header files\sdk\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\imgui\imgui_impl_dx11.h">
+      <Filter>header files\sdk\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\imgui\imgui_internal.h">
+      <Filter>header files\sdk\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\imgui\imstb_rectpack.h">
+      <Filter>header files\sdk\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\imgui\imstb_textedit.h">
+      <Filter>header files\sdk\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\imgui\imstb_truetype.h">
+      <Filter>header files\sdk\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\utilities\settings.hh">
+      <Filter>header files\sdk\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="features\esp.hh">
+      <Filter>header files\features</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\utilities\color.hh">
+      <Filter>header files\sdk\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\particles.hh">
+      <Filter>header files\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\json.h">
+      <Filter>header files\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\xor.hh">
+      <Filter>header files\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\config.hh">
+      <Filter>header files\sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\lazyimporter.hh">
+      <Filter>header files\sdk</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
