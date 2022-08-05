@@ -132,51 +132,51 @@ HRESULT __stdcall hooks::present( IDXGISwapChain* swapchain, const UINT sync_int
 
 	if ( menu_open ) {
 		ImGui::SetNextWindowSize( ImVec2( 350, 250 ), ImGuiCond_FirstUseEver );
-		ImGui::Begin( _( "Vitasnella [valorant]" ), nullptr,
+		ImGui::Begin( _( "delux private" ), nullptr,
 			ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoBringToFrontOnFocus | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse );
 		{
 			{
 				if ( ImGui::BeginTabBar( _( "primary_interface_tabbar" ), ImGuiTabBarFlags_NoTooltip ) ) {
 					if ( ImGui::BeginTabItem( _( "COMBAT###combat_tabitem" ) ) ) {
-						ImGui::Checkbox( _( "Aimbot enabled###combat.aimbot_enabled" ), &settings::aimbot_enable );
+						ImGui::Checkbox( _( "Aimbot Enabled###combat.aimbot_enabled" ), &settings::aimbot_enable );
 						ImGui::SameLine( );
 						ImGui::hotkey( _( "###aimbind" ), &settings::aimbot_bind );
-						ImGui::Checkbox( _( "Visible only" ), &settings::aimbot_visible );
+						ImGui::Checkbox( _( "Visible Only" ), &settings::aimbot_visible );
 						ImGui::SliderInt( _( "FOV" ), &settings::aimbot_fov, 7, 20 );
 						ImGui::SliderInt( _( "Smoothing" ), &settings::aimbot_smooth, 0, 15 );
 						
 						ImGui::EndTabItem( );
 					}
 					if ( ImGui::BeginTabItem( _( "VISUALS###visuals_tabitem" ) ) ) {
-						ImGui::Checkbox( _( "Box esp" ), &settings::visuals_box );
+						ImGui::Checkbox( _( "Box ESP" ), &settings::visuals_box );
 						ImGui::SameLine( );
 						ImGui::ColorEdit4( _( "##player_box_color" ), reinterpret_cast<float*>( &settings::visuals_box_color ), ImGuiColorEditFlags_AlphaBar | ImGuiColorEditFlags_NoInputs );
-						ImGui::Checkbox( _( "Skeleton esp" ), &settings::visuals_skeleton );
+						ImGui::Checkbox( _( "Skeleton ESP" ), &settings::visuals_skeleton );
 						ImGui::SameLine( );
 						ImGui::ColorEdit4( _( "##skeleton_color" ), reinterpret_cast<float*>( &settings::visuals_skeleton_color ), ImGuiColorEditFlags_AlphaBar | ImGuiColorEditFlags_NoInputs );
-						ImGui::Checkbox( _( "Name esp" ), &settings::visuals_name );
+						ImGui::Checkbox( _( "Name ESP" ), &settings::visuals_name );
 						ImGui::SameLine( );
 						ImGui::ColorEdit4( _( "##player_name_color" ), reinterpret_cast<float*>( &settings::visuals_name_color ), ImGuiColorEditFlags_AlphaBar | ImGuiColorEditFlags_NoInputs );
 						ImGui::Checkbox( _( "Aimbot FOV" ), &settings::visuals_showfov );
 						ImGui::SameLine( );
 						ImGui::ColorEdit4( _( "##aimbot_fov_color" ), reinterpret_cast<float*>( &settings::visuals_fov_color ), ImGuiColorEditFlags_AlphaBar | ImGuiColorEditFlags_NoInputs );
-						ImGui::Checkbox( _( "Drone esp" ), &settings::visuals_drone );
+						ImGui::Checkbox( _( "Drone ESP" ), &settings::visuals_drone );
 						ImGui::SameLine( );
 						ImGui::ColorEdit4( _( "##drone_color" ), reinterpret_cast<float*>( &settings::visuals_drone_color ), ImGuiColorEditFlags_AlphaBar | ImGuiColorEditFlags_NoInputs );
-						ImGui::Checkbox( _( "Camera esp" ), &settings::visuals_camera );
+						ImGui::Checkbox( _( "Camera ESP" ), &settings::visuals_camera );
 						ImGui::SameLine( );
 						ImGui::ColorEdit4( _( "##camera_color" ), reinterpret_cast<float*>( &settings::visuals_camera_color ), ImGuiColorEditFlags_AlphaBar | ImGuiColorEditFlags_NoInputs );
-						ImGui::Checkbox( _( "Tripwire esp" ), &settings::visuals_tripwire );
+						ImGui::Checkbox( _( "Tripwire ESP" ), &settings::visuals_tripwire );
 						ImGui::SameLine( );
 						ImGui::ColorEdit4( _( "##tripwire_color" ), reinterpret_cast<float*>( &settings::visuals_tripwire_color ), ImGuiColorEditFlags_AlphaBar | ImGuiColorEditFlags_NoInputs );
-						ImGui::Checkbox( _( "Health esp" ), &settings::visuals_healthbar );
+						ImGui::Checkbox( _( "Health ESP" ), &settings::visuals_healthbar );
 						
 						ImGui::EndTabItem( );
 					}
 					if ( ImGui::BeginTabItem( _( "MISC###misc_tabitem" ) ) ) {
-						if ( ImGui::Button( _( "Save config" ) ) )
+						if ( ImGui::Button( _( "Save Config" ) ) )
 							config.save( );
-						if ( ImGui::Button( _( "Load config" ) ) )
+						if ( ImGui::Button( _( "Load Config" ) ) )
 							config.load( );
 
 						ImGui::EndTabItem( );
